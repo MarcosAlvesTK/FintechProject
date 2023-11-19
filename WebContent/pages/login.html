@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Rudge <span>Banco</span></h1>
+    </header>
+    <div class="login-containerEdit">
+        <div class="login-container">
+            <div class="login-form" action="ServletLogin" method="GET">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit"><a href="../pages/carteira.html">Acessar</a></button>
+
+                <p class="create-account">Ainda não tem uma conta?</p>
+                <button class="create-btn"><a href="../pages/cadastro.html">Criar Conta</a></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section">
+    </div>
+    <div class="section2"></div>
+
+
+    <script src="../assets/login.js"></script>
+
+</body>
+
+</html>

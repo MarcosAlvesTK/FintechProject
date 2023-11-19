@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-image: linear-gradient(to right, rgba(15, 59, 68), rgba(3, 152, 158));
+
+}
+
+h1 {
+    margin-left: 5%;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #F5F5F5;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #0F3B44;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8vw;
+    font-weight: 700;
+    width: 95%;
+    padding: 1%;
+    border: none;
+    border-radius: 0.8vw;
+    background-color: #03989E;
+    color: #F5F5F5;
+    cursor: pointer;
+
+}
+
+span {
+    font-weight: 700;
+}
+
+hr {
+    margin: 1% 0 10% 0;
+    background-color: #383838;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    min-height: calc(100vh - 10%);
+}
+
+.ladoEsquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+
+}
+
+
+
+.containerDireito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+
+
+}
+
+.ladoDireito {
+    margin-top: 20%;
+
+}
+
+.barra2 {
+
+    margin: 1% 0 10% 0;
+    background-color: #383838;
+    width: 70%;
+
+}
+
+.containerEsquerdo {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: auto;
+
+}
+
+
+
+.opcoes {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.textoOpcao {
+    text-align: center;
+    margin: 7% 0;
+    color: #022340;
+
+
+}
+
+.containerListaSaldos {
+    width: 80%;
+}
+
+.create-btn {
+
+    margin-left: 48.5%;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+}
+
+.listaSaldos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkPosition {
+    font-weight: 100;
+    font-size: 1.7vw;
+    margin: 20% 0 0 75%;
+    text-decoration: underline;
+    text-decoration-color: #0F3B44;
+
+}
+
+.personalizarLink {
+
+    font-size: 1.3vw;
+    margin-top: 50%;
+    color: #0F3B44;
+
+}
+
+.listaSaldos li {
+    list-style: none;
+}
+
+.itemLista {
+    margin: 9% 0;
+}
+
+
+.listaSaldoDebito li {
+    color: #0F3B44;
+}
+
+.listaSaldoCredito li {
+    color: #03989E;
+}
+
+.listaSaldoInvestimento li {
+    color: #4CBFB5;
+}
+
+
+.input-group {
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.input-group label {
+    display: flex;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.input-group input {
+    background-color: #F5F5F5;
+    width: 65%;
+    padding: 1.7%;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ccc;
+    outline: none;
+}
+
+.input-group input:hover {
+    border-color: #0F3B44;
+}
+
+.input-group input:focus {
+    border-color: #0F3B44;
+}
+
+
+
+button:hover {
+    transition: 0.5s;
+    background-color: #05b2b8;
+}
+
+button:active {
+    transition: 0.5s;
+    background-color: #0f5c6b;
+}
+
+#listaSaldoTotal {
+    margin: 0 1.5%;
+    color: #0F3B44;
+}
+
+#saldoDebito,
+#saldoCredito,
+#investimentos {
+    color: #0F3B44 !important;
+
+}
+
+#chart {
+    width: 60% !important;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+@media (max-width:630px) {
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    label {
+        margin-left: 40%;
+
+    }
+
+
+    .linkPosition {
+
+        margin: 10% 10% 10% 18%;
+
+    }
+
+    .personalizarLink {
+        font-size: 2.5vw;
+    }
+
+    .create-btn {
+        font-size: 2vw;
+        margin: 5% 0 0 41%;
+        width: 25%;
+        padding: 2%;
+    }
+
+    .barra2 {
+        margin: 5% 0 5% 15%
+    }
+
+    .container {
+
+        flex-direction: column;
+
+
+    }
+
+    .ladoEsquerdo {
+        width: 100%;
+    }
+
+    .containerDireito {
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ladoDireito {
+        margin: 5%;
+        width: 80%;
+    }
+}

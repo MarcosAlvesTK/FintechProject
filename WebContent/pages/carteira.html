@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/carteira.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Rudge <span>Banco</span></h1>
+    </header>
+
+
+    <div class="container">
+        <div class="ladoEsquerdo">
+
+            <div class="containerEsquerdo">
+                <div id="chart">
+                </div>
+                <div class="containerOpcoes">
+                    <div class="opcoes">
+                        <p class="textoOpcao"><b>Selecione a opção desejada:</b></p>
+                        <div class="div-btn">
+                            <a class="btn-sacar" href="../pages/saque.html">Sacar</a>
+                            <a class="btn-depositar" href="../pages/deposito.html">Depositar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="ladoDireito">
+            <div class="containerListaSaldos">
+                <div class="itemLista">
+                    <ul class="listaSaldos listaSaldoDebito">
+                        <li>Saldo Débito: </li>
+                        <li id="saldoDebito"></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="itemLista">
+                    <ul class="listaSaldos listaSaldoCredito">
+                        <li>Saldo Crédito: </li>
+                        <li id="saldoCredito"></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="itemLista">
+                    <ul class="listaSaldos listaSaldoInvestimento">
+                        <li>Investimentos: </li>
+                        <li id="investimentos"></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="itemLista">
+                    <ul class="listaSaldos" id="listaSaldoTotal">
+                        <li><b>Saldo Total</b></li>
+                        <b>
+                            <li id="saldoTotal"></li>
+                        </b>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../assets/carteira.js"></script>
+</body>
+
+</html>
